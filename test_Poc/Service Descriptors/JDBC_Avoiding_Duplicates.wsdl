@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:extns="http://www.example.org/schema/1679376286015" xmlns:tns="http://www.example.org/wsdl/1679376285874" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="JDBC_Avoiding_Duplicates" targetNamespace="http://www.example.org/wsdl/1679376285874">
+  <wsdl:import namespace="http://www.example.org/schema/1679376286015"/>
+  <wsdl:message name="JDBC_Avoiding_DuplicatesRequest">
+    <wsdl:part element="extns:JDBC_Avoiding_DuplicatesRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="JDBC_Avoiding_DuplicatesResponse">
+    <wsdl:part element="extns:JDBC_Avoiding_DuplicatesResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="JDBC_Avoiding_Duplicates">
+    <wsdl:operation name="JDBC_Avoiding_Duplicates">
+      <wsdl:input message="tns:JDBC_Avoiding_DuplicatesRequest" name="JDBC_Avoiding_DuplicatesInput"/>
+      <wsdl:output message="tns:JDBC_Avoiding_DuplicatesResponse" name="JDBC_Avoiding_DuplicatesOutput"/>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

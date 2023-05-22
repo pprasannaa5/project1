@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:axis2="http://xsd.tns.tibco.com/bw/models/binding/soap/axis2" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmlns:schema_1679376286015="http://www.example.org/schema/1679376286015" xmlns:wsdl_1679376285874="http://www.example.org/wsdl/1679376285874" xmi:id="_5p5jIMFpEe27UdJNCl0IIw" targetNamespace="http://tns.tibco.com/bw/composite/test_Poc" name="test_Poc" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_xUTYkMeoEe2Z4rXKzaeFIA" name="JDBC_Avoiding_Duplicates" promote="ComponentJDBC_Avoiding_Duplicates/JDBC_Avoiding_Duplicates">
+    <sca:interface.wsdl xmi:id="_xUlFYMeoEe2Z4rXKzaeFIA" interface="http://www.example.org/wsdl/1679376285874#wsdl.interface(JDBC_Avoiding_Duplicates)" scaext:wsdlLocation="../Service%20Descriptors/JDBC_Avoiding_Duplicates.wsdl"/>
+    <scaext:binding xsi:type="axis2:SOAPServiceBinding" xmi:id="_gImgkMezEe2Z4rXKzaeFIA" name="SOAPServiceBinding" targetNamespace="http://www.tibco.com/a40d68444c0b40de903f87857b8c21f8/SOAPServiceBinding" portTypeQName="wsdl_1679376285874:JDBC_Avoiding_Duplicates" transportBindingType="HTTP" attachmentStyle="SwA" modelVersion="1.2.0" portTypeWSDLLocation="platform:/resource/test_Poc/Service%20Descriptors/JDBC_Avoiding_Duplicates.wsdl">
+      <bindingType xmi:id="_gI1xIMezEe2Z4rXKzaeFIA"/>
+      <inboundConfiguration xsi:type="axis2:HttpTransportConfiguration" xmi:id="_lgLpQMezEe2Z4rXKzaeFIA" endpointURI="/SOAPServiceBinding/jDBC_Avoiding_Duplicates/" httpConnector="test_poc.HTTPConnectorResource"/>
+      <operationConfiguration xmi:id="_gI6poMezEe2Z4rXKzaeFIA" operationName="JDBC_Avoiding_Duplicates" action="JDBC_Avoiding_Duplicates" actionNeeded="true">
+        <bindingType xmi:id="_gI6pocezEe2Z4rXKzaeFIA"/>
+        <messageConfiguration xmi:id="_gI6posezEe2Z4rXKzaeFIA" messageQName="wsdl_1679376285874:JDBC_Avoiding_DuplicatesRequest" wsdlLocation="platform:/resource/test_Poc/Service%20Descriptors/JDBC_Avoiding_Duplicates.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_gI6po8ezEe2Z4rXKzaeFIA" partName="parameters" partElementName="schema_1679376286015:JDBC_Avoiding_DuplicatesRequest"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_gI6ppMezEe2Z4rXKzaeFIA" messageQName="wsdl_1679376285874:JDBC_Avoiding_DuplicatesResponse" messageDirection="OUTPUT" wsdlLocation="platform:/resource/test_Poc/Service%20Descriptors/JDBC_Avoiding_Duplicates.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_gI6ppcezEe2Z4rXKzaeFIA" partName="parameters" partElementName="schema_1679376286015:JDBC_Avoiding_DuplicatesResponse"/>
+        </messageConfiguration>
+        <context xmi:id="_gI6ppsezEe2Z4rXKzaeFIA">
+          <inputMapping xmi:id="_gI73wMezEe2Z4rXKzaeFIA"/>
+          <outputMapping xmi:id="_gI73wcezEe2Z4rXKzaeFIA" direction="OUTPUT"/>
+        </context>
+      </operationConfiguration>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_gI73wsezEe2Z4rXKzaeFIA" bindingName="SOAPServiceBinding"/>
+  </sca:service>
+  <sca:property xmi:id="_7CS5cMFpEe27UdJNCl0IIw" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7Cl0YMFpEe27UdJNCl0IIw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7CvlYMFpEe27UdJNCl0IIw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7CzPwMFpEe27UdJNCl0IIw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7C9AwMFpEe27UdJNCl0IIw" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7C9AwcFpEe27UdJNCl0IIw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7DGxwMFpEe27UdJNCl0IIw" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7DP7sMFpEe27UdJNCl0IIw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7DZssMFpEe27UdJNCl0IIw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_6doGIMFpEe27UdJNCl0IIw" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_6doGIcFpEe27UdJNCl0IIw" processName="test_poc.InsertingData_ge63in_OneDB_Le63Data_AnotherDB"/>
+  </sca:component>
+  <sca:component xmi:id="_t82C4McLEe2Z4rXKzaeFIA" name="ComponentXSLT_test" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_t82C4ccLEe2Z4rXKzaeFIA" processName="test_poc.XSLT_test"/>
+  </sca:component>
+  <sca:component xmi:id="_5BlWIMcgEe2Z4rXKzaeFIA" name="ComponentHighVoluemeData" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_5BlWIccgEe2Z4rXKzaeFIA" processName="test_poc.HighVoluemeData"/>
+  </sca:component>
+  <sca:component xmi:id="_HJDtEMejEe2Z4rXKzaeFIA" name="ComponentJDBC_Avoiding_Duplicates" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_HJDtEcejEe2Z4rXKzaeFIA" processName="test_poc.JDBC_Avoiding_Duplicates"/>
+    <sca:service xmi:id="_xULcwMeoEe2Z4rXKzaeFIA" name="JDBC_Avoiding_Duplicates">
+      <sca:interface.wsdl xmi:id="_xUNR8MeoEe2Z4rXKzaeFIA" interface="http://www.example.org/wsdl/1679376285874#wsdl.interface(JDBC_Avoiding_Duplicates)" scaext:wsdlLocation="../Service%20Descriptors/JDBC_Avoiding_Duplicates.wsdl"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_OcTlUMewEe2Z4rXKzaeFIA" name="Componenttestdata" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_OcUMYMewEe2Z4rXKzaeFIA" processName="test_poc.testdata"/>
+  </sca:component>
+  <sca:component xmi:id="_Q2jygMyYEe2Y44k7K2S_KA" name="ComponentFetchRows_FromSqldirect_and_Parseit" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Q2jygcyYEe2Y44k7K2S_KA" processName="test_poc.FetchRows_FromSqldirect_and_Parseit"/>
+  </sca:component>
+  <sca:component xmi:id="_VgspgM1gEe2DG442NrP3vQ" name="Componenttest_jdbcupdate" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Vgspgc1gEe2DG442NrP3vQ" processName="test_poc.test_jdbcupdate"/>
+  </sca:component>
+</sca:composite>

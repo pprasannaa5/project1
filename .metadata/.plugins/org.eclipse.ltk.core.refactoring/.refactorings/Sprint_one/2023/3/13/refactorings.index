@@ -1,0 +1,8 @@
+1680264165112	Rename resource 'tst.bwp'
+1680267803709	Delete PartnerLink 'NumberConversionSoapType'
+1680268164511	Delete PartnerLink 'NumberConversionSoapType'
+1680270367924	Delete PartnerLink 'NewWSDLFile'
+1680270436656	Delete PartnerLink 'NewWSDLFile'
+1680271136029	Move 'conversion.wsdl' to 'Resources'
+1680271154223	Delete PartnerLink 'conversion'
+1680271783715	Delete PartnerLink 'conversion'

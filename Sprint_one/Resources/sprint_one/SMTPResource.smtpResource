@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:smtp="http://xsd.tns.tibco.com/bw/models/sharedresource/smtp" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_4SHiEdOXEe2CTpNPV7EUoA" name="sprint_one.SMTPResource" type="smtp:SmtpConfiguration">
+  <jndi:reference xmi:id="_4TkTkNOXEe2CTpNPV7EUoA" key="identityJNDIName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="smtp:SmtpConfiguration" xmi:id="_4TkTkdOXEe2CTpNPV7EUoA">
+    <tcpDetails xmi:id="_4TmIwNOXEe2CTpNPV7EUoA" host="smtp.gmail.com" port="587" connectionTimeout="60000"/>
+    <userCredentials xmi:id="_4TmIwdOXEe2CTpNPV7EUoA" username="pprasannaa55@gmail.com" password="#!UWopNmIYGrdqkJqGZ+NA2LhY72XB2twDDzb/Z6mtNIyh3rY+Ym4xGyFj6vS6wzT6"/>
+  </jndi:configuration>
+</jndi:namedResource>

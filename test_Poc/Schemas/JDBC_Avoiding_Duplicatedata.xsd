@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat/4508eb9a-7708-4011-a516-671d171fa613" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ns.tibco.com/bw/palette/dataformat/4508eb9a-7708-4011-a516-671d171fa613">
+  <xsd:element name="root" tibex:source="sr.index.dataFormatResource">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="s.no" type="xsd:string"/>
+                <xsd:element name="name" type="xsd:string"/>
+                <xsd:element name="id" type="xsd:string"/>
+                <xsd:element name="Salary" type="xsd:string"/>
+            </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

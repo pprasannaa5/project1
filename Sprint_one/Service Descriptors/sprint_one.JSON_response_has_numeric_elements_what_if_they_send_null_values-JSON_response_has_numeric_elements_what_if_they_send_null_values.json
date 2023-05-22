@@ -1,0 +1,62 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:8085",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/json_response_has_numeric_elements_what_if_they_send_null_values" : {
+      "post" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "post-json_response_has_numeric_elements_what_if_they_send_null_values",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/Element"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Element to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Element"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Element" : {
+      "type" : "object",
+      "required" : [ "LOCATION", "RATING", "ID", "NAME", "COMPANY" ],
+      "properties" : {
+        "ID" : {
+          "type" : "string"
+        },
+        "NAME" : {
+          "type" : "string"
+        },
+        "COMPANY" : {
+          "type" : "string"
+        },
+        "LOCATION" : {
+          "type" : "string"
+        },
+        "RATING" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_4508eb9a-7708-4011-a516-671d171fa613="http://ns.tibco.com/bw/palette/dataformat/4508eb9a-7708-4011-a516-671d171fa613" xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_iKaakcejEe2Z4rXKzaeFIA" name="test_poc.JDBC_Avoiding_Duplicatedata" type="dataformat:DataFormat">
+  <imports xmi:id="_oZZFUMejEe2Z4rXKzaeFIA" importType="http://www.w3.org/2001/XMLSchema" namespace="http://ns.tibco.com/bw/palette/dataformat/4508eb9a-7708-4011-a516-671d171fa613"/>
+  <jndi:configuration xsi:type="dataformat:DataFormat" xmi:id="_iKbBoMejEe2Z4rXKzaeFIA" formatType="Delimiter separated" colSeparator="," colSeparatorParseRule="Treat all characters as entered as a single column separator string" lineSeparator="New Line" fillCharacter="Space" schemaElementQName="_4508eb9a-7708-4011-a516-671d171fa613:root" fieldOffsetsStr="s.no(0,0)&#xA;name(0,0)&#xA;id(0,0)&#xA;Salary(0,0)">
+    <fieldOffsets xmi:id="_raQOQMejEe2Z4rXKzaeFIA" name="s.no"/>
+    <fieldOffsets xmi:id="_st4ZUMejEe2Z4rXKzaeFIA" name="name"/>
+    <fieldOffsets xmi:id="_t7teYMejEe2Z4rXKzaeFIA" name="id"/>
+    <fieldOffsets xmi:id="_vQxM0MejEe2Z4rXKzaeFIA" name="Salary"/>
+  </jndi:configuration>
+</jndi:namedResource>

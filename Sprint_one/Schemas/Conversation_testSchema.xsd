@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/schema/1680328230532" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://www.example.org/schema/1680328230532">
+  <element name="OrderCreateRequest">
+    <complexType>
+      <sequence>
+        <element name="ItemNo" type="string"/>
+                <element name="ItemName" type="string"/>
+                <element name="Quantity" type="integer"/>
+            </sequence>
+    </complexType>
+  </element>
+  <element name="OrderCreateResponse">
+    <complexType>
+      <sequence>
+        <element maxOccurs="1" minOccurs="0" name="OrderID" type="string"/>
+                <element maxOccurs="1" minOccurs="0" name="CartStatus" type="string"/>
+                <element maxOccurs="1" minOccurs="0" name="OrderConfirmStatus" type="string"/>
+            </sequence>
+    </complexType>
+  </element>
+    <element name="OrderConfirmRequest">
+    <complexType>
+      <sequence>
+      	<element maxOccurs="1" minOccurs="0" name="OrderID" type="string"/>
+      	<element maxOccurs="1" minOccurs="0" name="CheckoutStatus" type="string"/>
+      	<element maxOccurs="1" minOccurs="0" name="PaymentOptions" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+    <element name="OrderConfirmResponse">
+    <complexType>
+      <sequence>
+      	<element name="OrderShipmentID" type="string"/>
+      	<element maxOccurs="1" minOccurs="0" name="OrderID" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+    <element name="OrderCancelRequest">
+    <complexType>
+      <sequence>
+
+      	<element name="OrderID" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+    <element name="OrderCancelResponse">
+    <complexType>
+      <sequence>
+        <element name="OrderID" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+
+    <element name="CANCELRequest">
+    <complexType>
+      <sequence>
+        <element name="OrderID" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+    <element name="operationRequest">
+    <complexType>
+      <sequence>
+        <element name="in" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+    <element name="operationResponse">
+    <complexType>
+      <sequence>
+        <element name="out" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+    <element name="operation1Request">
+    <complexType>
+      <sequence>
+        <element name="in" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+    <element name="operation1Response">
+    <complexType>
+      <sequence>
+        <element name="out" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+</schema>

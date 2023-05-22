@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/JSON_XMLSchema" xmlns:tns="http://www.example.org/JSON_XMLSchema" elementFormDefault="qualified">
+
+    <complexType name="Jsontest_Type">
+    	<sequence>
+    		<element name="ID" type="string" minOccurs="0" maxOccurs="unbounded"></element>
+    		<element name="NAME" type="string" minOccurs="0" maxOccurs="unbounded"></element>
+    		<element name="COMPANY" type="string" minOccurs="0" maxOccurs="unbounded"></element>
+    		<element name="LOCATION" type="string" minOccurs="0" maxOccurs="unbounded"></element>
+    		<element name="RATING" type="string" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="Jsontest_Element" type="tns:Jsontest_Type"></element>
+</schema>

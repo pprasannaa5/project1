@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_OqX2AMGbEe2rwZhdCNr5ig" targetNamespace="http://tns.tibco.com/bw/composite/Messageselectors" name="Messageselectors" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_PO3DIMGbEe2rwZhdCNr5ig" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_PO77oMGbEe2rwZhdCNr5ig" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_PO--8MGbEe2rwZhdCNr5ig" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_PPCCQMGbEe2rwZhdCNr5ig" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_PPFFkMGbEe2rwZhdCNr5ig" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_PPII4MGbEe2rwZhdCNr5ig" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_PPKlIMGbEe2rwZhdCNr5ig" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_PPNBYMGbEe2rwZhdCNr5ig" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_PPQEsMGbEe2rwZhdCNr5ig" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_OxmfYMGbEe2rwZhdCNr5ig" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_OxmfYcGbEe2rwZhdCNr5ig" processName="messageselectors.Process"/>
+  </sca:component>
+  <sca:component xmi:id="_mftBgMGdEe2rwZhdCNr5ig" name="ComponentMessageselectors_JMS_Receiver" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_mftBgcGdEe2rwZhdCNr5ig" processName="messageselectors.Messageselectors_JMS_Receiver"/>
+  </sca:component>
+</sca:composite>

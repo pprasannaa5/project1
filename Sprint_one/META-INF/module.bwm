@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:NewWSDLFile="http://www.tibco.com/NewWSDLFile/" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:axis2="http://xsd.tns.tibco.com/bw/models/binding/soap/axis2" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:conversion="http://www.tibco.com/conversion/" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmlns:schema_1680091504149="http://www.example.org/schema/1680091504149" xmlns:schema_1680328230532="http://www.example.org/schema/1680328230532" xmlns:webservicesserver="http://www.dataaccess.com/webservicesserver/" xmlns:wsdl_1680091504004="http://www.example.org/wsdl/1680091504004" xmlns:wsdl_1680328230302="http://www.example.org/wsdl/1680328230302" xmi:id="_71Jg0M3tEe2DG442NrP3vQ" targetNamespace="http://tns.tibco.com/bw/composite/Sprint_one" name="Sprint_one" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_JT5DQs4BEe2xJf4WHTePTA" name="resource" promote="ComponentStateless_test/resource">
+    <sca:interface.wsdl xmi:id="_JUMlQM4BEe2xJf4WHTePTA" interface="http://xmlns.example.com/20230329102822#wsdl.interface(resource)" scaext:wsdlLocation="../Processes/sprint_one/Stateless_test.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_JUfgMM4BEe2xJf4WHTePTA" name="RestService" path="/resource" docBasePath="http://localhost:7777/Sprint_one" docResourcePath="Resource" basePath="/" connector="sprint_one.Resource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/sprint_one.Stateless_test-Resource.json">
+      <operation xmi:id="_JUfgMs4BEe2xJf4WHTePTA" operationName="post" nickname="post-resource" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <advancedConfig xmi:id="_JUfgMc4BEe2xJf4WHTePTA" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_JUfgM84BEe2xJf4WHTePTA" bindingName="RestService"/>
+  </sca:service>
+  <sca:service xmi:id="_9yijUM4pEe2uMZfPL1GMMw" name="Statefull_test" promote="ComponentStatefull_test/Statefull_test">
+    <sca:interface.wsdl xmi:id="_9zFV4M4pEe2uMZfPL1GMMw" interface="http://www.example.org/wsdl/1680091504004#wsdl.interface(Statefull_test)" scaext:wsdlLocation="../Service%20Descriptors/Statefull_test1.wsdl"/>
+    <scaext:binding xsi:type="axis2:SOAPServiceBinding" xmi:id="_fTRSkM4rEe2uMZfPL1GMMw" name="SOAPServiceBinding" targetNamespace="http://www.tibco.com/167c9ca1c9644f80b6d8a93315678b04/SOAPServiceBinding" portTypeQName="wsdl_1680091504004:Statefull_test" transportBindingType="HTTP" attachmentStyle="SwA" modelVersion="1.2.0" portTypeWSDLLocation="platform:/resource/Sprint_one/Service%20Descriptors/Statefull_test1.wsdl">
+      <bindingType xmi:id="_fULRgM4rEe2uMZfPL1GMMw"/>
+      <inboundConfiguration xsi:type="axis2:HttpTransportConfiguration" xmi:id="_hw06IM4rEe2uMZfPL1GMMw" endpointURI="/SOAPServiceBinding/statefull_test/" httpConnector="sprint_one.Resource"/>
+      <operationConfiguration xmi:id="_fUL4kM4rEe2uMZfPL1GMMw" operationName="operation" action="operation" actionNeeded="true">
+        <bindingType xmi:id="_fUL4kc4rEe2uMZfPL1GMMw"/>
+        <messageConfiguration xmi:id="_fUL4ks4rEe2uMZfPL1GMMw" messageQName="wsdl_1680091504004:operationRequest" wsdlLocation="platform:/resource/Sprint_one/Service%20Descriptors/Statefull_test1.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_fUL4k84rEe2uMZfPL1GMMw" partName="parameters" partElementName="schema_1680091504149:operationRequest"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_fUL4lM4rEe2uMZfPL1GMMw" messageQName="wsdl_1680091504004:operationResponse" messageDirection="OUTPUT" wsdlLocation="platform:/resource/Sprint_one/Service%20Descriptors/Statefull_test1.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_fUL4lc4rEe2uMZfPL1GMMw" partName="parameters" partElementName="schema_1680091504149:operationResponse"/>
+        </messageConfiguration>
+        <context xmi:id="_fUMfoM4rEe2uMZfPL1GMMw">
+          <inputMapping xmi:id="_fUMfoc4rEe2uMZfPL1GMMw"/>
+          <outputMapping xmi:id="_fUMfos4rEe2uMZfPL1GMMw" direction="OUTPUT"/>
+        </context>
+      </operationConfiguration>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_fUMfo84rEe2uMZfPL1GMMw" bindingName="SOAPServiceBinding"/>
+  </sca:service>
+  <sca:property xmi:id="_8KgFwM3tEe2DG442NrP3vQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8KgFwc3tEe2DG442NrP3vQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8KgFws3tEe2DG442NrP3vQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8KpPsM3tEe2DG442NrP3vQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8KpPsc3tEe2DG442NrP3vQ" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8KpPss3tEe2DG442NrP3vQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8KpPs83tEe2DG442NrP3vQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8KzAsM3tEe2DG442NrP3vQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8K2rEM3tEe2DG442NrP3vQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_PtrKcM3uEe2DG442NrP3vQ" name="ComponentFetchRows_from_SqlDirect_Parseit" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_PtrKcc3uEe2DG442NrP3vQ" processName="sprint_one.FetchRows_from_SqlDirect_Parseit"/>
+  </sca:component>
+  <sca:component xmi:id="_VIks4M3uEe2DG442NrP3vQ" name="ComponentStateless_test" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_VIks4c3uEe2DG442NrP3vQ" processName="sprint_one.Stateless_test"/>
+    <sca:service xmi:id="_JT5DQM4BEe2xJf4WHTePTA" name="resource">
+      <sca:interface.wsdl xmi:id="_JT5DQc4BEe2xJf4WHTePTA" interface="http://xmlns.example.com/20230329102822#wsdl.interface(resource)"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_YfMqcM3uEe2DG442NrP3vQ" name="ComponentStatefull_test" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_YfMqcc3uEe2DG442NrP3vQ" processName="sprint_one.Statefull_test"/>
+    <sca:service xmi:id="_9yT50M4pEe2uMZfPL1GMMw" name="Statefull_test">
+      <sca:interface.wsdl xmi:id="_9yccsM4pEe2uMZfPL1GMMw" interface="http://www.example.org/wsdl/1680091504004#wsdl.interface(Statefull_test)" scaext:wsdlLocation="../Service%20Descriptors/Statefull_test1.wsdl"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_8Kk8QM4DEe2xJf4WHTePTA" name="ComponentStateless_mainprocess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_8Kk8Qc4DEe2xJf4WHTePTA" processName="sprint_one.Stateless_mainprocess"/>
+  </sca:component>
+</sca:composite>

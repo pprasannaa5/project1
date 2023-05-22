@@ -1,0 +1,29 @@
+{
+    "records": [{
+        "name": "Cloud",
+        "items": [],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
+    "resources": [
+        {
+            "location": "Service Descriptors/sprint_one.Stateless_test-Resource.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/sprint_one.JSON_response_has_numeric_elements-what_if_they_send_null_values-JSON_Identifying_NullValues.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/sprint_one.JSON_response_has_numeric_elements_what_if_they_send_null_values-JSON_response_has_numeric_elements_what_if_they_send_null_values.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/sprint_one.JsonTest-Json_test.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/sprint_one.Jsontest1-Jsontest1_Resource.json",
+            "type": "generated"
+        }
+    ]
+}

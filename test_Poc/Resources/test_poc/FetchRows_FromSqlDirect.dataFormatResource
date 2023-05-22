@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_66b89144-cb97-4d2e-8400-ddaecab432f8="http://ns.tibco.com/bw/palette/dataformat/66b89144-cb97-4d2e-8400-ddaecab432f8" xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_9PeiEc3zEe2DG442NrP3vQ" name="test_poc.FetchRows_FromSqlDirect" type="dataformat:DataFormat">
+  <imports xmi:id="_FxuP8M30Ee2DG442NrP3vQ" importType="http://www.w3.org/2001/XMLSchema" namespace="http://ns.tibco.com/bw/palette/dataformat/66b89144-cb97-4d2e-8400-ddaecab432f8"/>
+  <jndi:configuration xsi:type="dataformat:DataFormat" xmi:id="_9PeiEs3zEe2DG442NrP3vQ" formatType="Delimiter separated" colSeparator="," colSeparatorParseRule="Treat all characters as entered as a single column separator string" lineSeparator="New Line" fillCharacter="Space" schemaElementQName="_66b89144-cb97-4d2e-8400-ddaecab432f8:root" fieldOffsetsStr="ID(0,0)&#xA;NAME(0,0)&#xA;COMPANY(0,0)&#xA;LOCATION(0,0)&#xA;RATING(0,0)">
+    <fieldOffsets xmi:id="_JilScM30Ee2DG442NrP3vQ" name="ID"/>
+    <fieldOffsets xmi:id="_LGYngM30Ee2DG442NrP3vQ" name="NAME"/>
+    <fieldOffsets xmi:id="_X8rkgM30Ee2DG442NrP3vQ" name="COMPANY"/>
+    <fieldOffsets xmi:id="_ZaxTIM30Ee2DG442NrP3vQ" name="LOCATION"/>
+    <fieldOffsets xmi:id="_bCJgoM30Ee2DG442NrP3vQ" name="RATING"/>
+  </jndi:configuration>
+</jndi:namedResource>

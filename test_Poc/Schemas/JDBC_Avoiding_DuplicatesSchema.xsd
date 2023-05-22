@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/schema/1679376286015" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://www.example.org/schema/1679376286015">
+  <element name="JDBC_Avoiding_DuplicatesRequest">
+    <complexType>
+      <sequence>
+        <element name="NAME" type="string"/>
+                <element name="ACCOUNTNUM" type="string"/>
+                <element name="BALANCE" type="string"/>
+                <element name="AREA" type="string"/>
+            </sequence>
+    </complexType>
+  </element>
+  <element name="JDBC_Avoiding_DuplicatesResponse">
+    <complexType>
+      <sequence>
+        <element name="result" type="string"/>
+            </sequence>
+    </complexType>
+  </element>
+</schema>

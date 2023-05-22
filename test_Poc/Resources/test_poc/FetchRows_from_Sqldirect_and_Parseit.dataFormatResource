@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat" xmlns:e5096eb0-7681-4a09-8dd3-aff09eb7ff18="http://ns.tibco.com/bw/palette/dataformat/e5096eb0-7681-4a09-8dd3-aff09eb7ff18" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_nabyocyZEe2Y44k7K2S_KA" name="test_poc.FetchRows_from_Sqldirect_and_Parseit" type="dataformat:DataFormat">
+  <imports xmi:id="_wqBusMyZEe2Y44k7K2S_KA" importType="http://www.w3.org/2001/XMLSchema" namespace="http://ns.tibco.com/bw/palette/dataformat/e5096eb0-7681-4a09-8dd3-aff09eb7ff18"/>
+  <jndi:configuration xsi:type="dataformat:DataFormat" xmi:id="_nabyosyZEe2Y44k7K2S_KA" formatType="Delimiter separated" colSeparator="," colSeparatorParseRule="Treat all characters as entered as a single column separator string" lineSeparator="New Line" fillCharacter="Space" schemaElementQName="e5096eb0-7681-4a09-8dd3-aff09eb7ff18:root" fieldOffsetsStr="NAME(0,0)&#xA;ACCOUNTNUM(0,0)&#xA;BALANCE(0,0)&#xA;AREA(0,0)">
+    <fieldOffsets xmi:id="_8tuCsMycEe2Y44k7K2S_KA" name="NAME"/>
+    <fieldOffsets xmi:id="_8tuCscycEe2Y44k7K2S_KA" name="ACCOUNTNUM"/>
+    <fieldOffsets xmi:id="_-OcOkMycEe2Y44k7K2S_KA" name="BALANCE"/>
+    <fieldOffsets xmi:id="__ZLjYMycEe2Y44k7K2S_KA" name="AREA"/>
+  </jndi:configuration>
+</jndi:namedResource>

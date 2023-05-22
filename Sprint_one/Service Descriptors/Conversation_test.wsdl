@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:extns="http://www.example.org/schema/1680328230532" xmlns:tns="http://www.example.org/wsdl/1680328230302" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Conversation_test" targetNamespace="http://www.example.org/wsdl/1680328230302">
+  <wsdl:import namespace="http://www.example.org/schema/1680328230532"/>
+  <wsdl:message name="OrderCreateRequest">
+    <wsdl:part element="extns:OrderCreateRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="OrderCreateResponse">
+    <wsdl:part element="extns:OrderCreateResponse" name="parameters"/>
+  </wsdl:message>
+    <wsdl:message name="OrderConfirmRequest">
+    <wsdl:part element="extns:OrderConfirmRequest" name="parameters"/>
+  </wsdl:message>
+    <wsdl:message name="OrderConfirmResponse">
+    <wsdl:part element="extns:OrderConfirmResponse" name="parameters"/>
+  </wsdl:message>
+    <wsdl:message name="OrderCancelRequest">
+        <wsdl:part element="extns:OrderCancelRequest" name="parameters1"/>
+    </wsdl:message>
+    <wsdl:portType name="Conversation_test">
+    <wsdl:operation name="OrderCreate">
+      <wsdl:input message="tns:OrderCreateRequest" name="Conversation_operationInput"/>
+      <wsdl:output message="tns:OrderCreateResponse" name="Conversation_operationOutput"/>
+    </wsdl:operation>
+        <wsdl:operation name="OrderConfirm">
+      <wsdl:input message="tns:OrderConfirmRequest" name="operationInput"/>
+      <wsdl:output message="tns:OrderConfirmResponse" name="operationOutput"/>
+    </wsdl:operation>
+        <wsdl:operation name="OrderCancel">
+      <wsdl:input message="tns:OrderCancelRequest" name="operationInput0"/>
+    </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

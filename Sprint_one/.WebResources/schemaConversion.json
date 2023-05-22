@@ -1,0 +1,52 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/Sprint_one/Service Descriptors/sprint_one.Stateless_test-Resource.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1680073897018"
+    },
+    {
+        "jsonSchemaLocation": "/Sprint_one/Service Descriptors/sprint_one.Stateless_test-Resource.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1680073940471"
+    },
+    {
+        "jsonSchemaLocation": "/Sprint_one/Service Descriptors/sprint_one.JSON_response_has_numeric_elements-what_if_they_send_null_values-JSON_Identifying_NullValues.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1680689714594"
+    },
+    {
+        "jsonSchemaLocation": "/Sprint_one/Service Descriptors/sprint_one.JSON_response_has_numeric_elements-what_if_they_send_null_values-JSON_Identifying_NullValues.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1680689746333"
+    },
+    {
+        "jsonSchemaLocation": "/Sprint_one/Service Descriptors/sprint_one.JSON_response_has_numeric_elements_what_if_they_send_null_values-JSON_response_has_numeric_elements_what_if_they_send_null_values.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1680691984991"
+    },
+    {
+        "jsonSchemaLocation": "/Sprint_one/Service Descriptors/sprint_one.JSON_response_has_numeric_elements_what_if_they_send_null_values-JSON_response_has_numeric_elements_what_if_they_send_null_values.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1680692050198"
+    },
+    {
+        "jsonSchemaLocation": "/Sprint_one/Service Descriptors/sprint_one.JsonTest-Json_test.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1680762289333"
+    },
+    {
+        "jsonSchemaLocation": "/Sprint_one/Service Descriptors/sprint_one.JsonTest-Json_test.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1680762317555"
+    },
+    {
+        "jsonSchemaLocation": "/Sprint_one/Service Descriptors/sprint_one.Jsontest1-Jsontest1_Resource.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1680763826949"
+    },
+    {
+        "jsonSchemaLocation": "/Sprint_one/Service Descriptors/sprint_one.Jsontest1-Jsontest1_Resource.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1680763861077"
+    }
+]}

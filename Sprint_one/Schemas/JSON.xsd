@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat/7a552b2b-cb1f-4e4b-8af2-5fd174f82f68" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ns.tibco.com/bw/palette/dataformat/7a552b2b-cb1f-4e4b-8af2-5fd174f82f68">
+  <xsd:element name="root" tibex:source="sr.index.dataFormatResource">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="ID" type="xsd:string"/>
+        <xsd:element name="NAME" type="xsd:string"/>
+        <xsd:element name="COMPANY" type="xsd:string"/>
+        <xsd:element name="LOCATION" type="xsd:string"/>
+        <xsd:element name="RATING" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+</xsd:schema>

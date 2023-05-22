@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:complexType name="unknownResultset">
+    	<xsd:sequence>
+    		<xsd:element ref="row" maxOccurs="unbounded" minOccurs="0"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:element name="unknownResultset" type="unknownResultset"></xsd:element>
+
+    <xsd:element name="row" type="row"></xsd:element>
+
+    <xsd:complexType name="row">
+    	<xsd:sequence>
+    		<xsd:element ref="column" maxOccurs="unbounded" minOccurs="0"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:element name="column" type="column_type"></xsd:element>
+
+    <xsd:complexType name="column_type">
+    	<xsd:sequence>
+    		<xsd:element name="name" type="xsd:string"></xsd:element>
+    		<xsd:element name="value" type="xsd:string"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

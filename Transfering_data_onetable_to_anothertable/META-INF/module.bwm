@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_kLKSMMGAEe2rwZhdCNr5ig" targetNamespace="http://tns.tibco.com/bw/composite/Transfering_data_onetable_to_anothertable" name="Transfering_data_onetable_to_anothertable" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_kr7c8MGAEe2rwZhdCNr5ig" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ksI4UMGAEe2rwZhdCNr5ig" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ksPmAMGAEe2rwZhdCNr5ig" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ksWTsMGAEe2rwZhdCNr5ig" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ksbMMMGAEe2rwZhdCNr5ig" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ksgEsMGAEe2rwZhdCNr5ig" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ksk9MMGAEe2rwZhdCNr5ig" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ksrq4MGAEe2rwZhdCNr5ig" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ksy_oMGAEe2rwZhdCNr5ig" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_kemyoMGAEe2rwZhdCNr5ig" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_kemyocGAEe2rwZhdCNr5ig" processName="transfering_data_onetable_to_anothertable.Process"/>
+  </sca:component>
+</sca:composite>
