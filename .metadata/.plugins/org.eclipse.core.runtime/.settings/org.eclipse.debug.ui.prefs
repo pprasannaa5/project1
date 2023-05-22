@@ -1,0 +1,10 @@
+com.tibco.bw.core.design.debug.ui.launch.existingApplications=TEST1.application/
+com.tibco.bw.core.design.debug.ui.launch.processesArg=TEST1.application\=test1.Process/
+com.tibco.bw.core.design.debug.ui.launch.selectedApplications=TEST1.application/
+com.tibco.bw.core.design.debug.ui.launch.selectedModules=TEST1/
+com.tibco.bw.core.design.debug.ui.launch.selectedProcesses=TEST1\=test1.Process/
+com.tibco.bw.core.design.debug.ui.view.BWProcessInstanceView+com.tibco.bw.core.design.debug.ui.actions.BWShowInstanceSatckByTempleteAction=true
+eclipse.preferences.version=1
+org.eclipse.debug.ui.DebugView+com.tibco.bw.core.design.debug.ui.actions.BWShowStackByTempleteAction=true
+org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<launchPerspectives/>\r\n
+preferredDetailPanes=DefaultDetailPane\:DefaultDetailPane|
