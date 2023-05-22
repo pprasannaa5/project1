@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_EKwqAN0aEe2nGKSYP3akFg" targetNamespace="http://tns.tibco.com/bw/composite/migrate" name="migrate" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_EKwqAd0aEe2nGKSYP3akFg" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_EKwqAt0aEe2nGKSYP3akFg" name="BW.APPNODE.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_EKwqA90aEe2nGKSYP3akFg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_EKwqBN0aEe2nGKSYP3akFg" name="BW.HOST.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_EKwqBd0aEe2nGKSYP3akFg" name="BW.DOMAIN.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_EKwqBt0aEe2nGKSYP3akFg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_EKwqB90aEe2nGKSYP3akFg" name="BW.APPSPACE.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_EKwqCN0aEe2nGKSYP3akFg" name="BW.MODULE.VERSION" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_EKwqCd0aEe2nGKSYP3akFg" name="BW.MODULE.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_Ee7jMN0aEe2nGKSYP3akFg" name="migrate.Process-DefinitionComponent" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Ee7jMd0aEe2nGKSYP3akFg" processName="migrate.Process-Definition"/>
+  </sca:component>
+</sca:composite>

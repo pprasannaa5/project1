@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:tns="http://ns.tibco.com/bw/palette/dataformat/migrate/Data-Format.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ns.tibco.com/bw/palette/dataformat/migrate/Data-Format.xsd">
+    <xsd:element name="root">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element minOccurs="0" name="s.no" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="name" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="id" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="Salary" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="Rows" type="tns:rowsType"/>
+    <xsd:complexType name="rowsType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" ref="tns:root"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

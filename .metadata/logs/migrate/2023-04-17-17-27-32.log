@@ -1,0 +1,87 @@
+2023-04-17 17:27:32,742 [Worker-11] INFO  com.tibco.bw.migration.debug  - Generating BW 6 application for BW5 project/projects at C:\tibcobw5\designer\5.7\migrate
+2023-04-17 17:27:33,453 [Worker-11] INFO  com.tibco.bw.migration.debug  - Migrating Global Variables..
+2023-04-17 17:27:33,730 [Worker-11] INFO  com.tibco.bw.migration.debug  - Migrating Shared Resources..
+2023-04-17 17:27:33,860 [Worker-11] DEBUG com.tibco.bw.migration.debug  - Found Migrator for fileExtensionsharedparse  com.tibco.bw.tools.migrator.v6.palette.parse.sharedResource.DataFormatSharedResourceTypeMigrator@1f9e978c
+2023-04-17 17:27:34,433 [Worker-11] DEBUG com.tibco.bw.migration.debug  - http://ns.tibco.com/bw/palette/dataformat/migrate/Data-Format.xsd       file:/e:/Migration_Test1/migrate/migrate/Data-Format.xsd
+2023-04-17 17:27:34,434 [Worker-11] DEBUG com.tibco.bw.migration.debug  - Added Schema to ResourceSet => http://ns.tibco.com/bw/palette/dataformat/migrate/Data-Format.xsd   with location   e:/Migration_Test1/migrate/migrate/Data-Format.xsd
+2023-04-17 17:27:34,434 [Worker-11] DEBUG com.tibco.bw.migration.debug  - http://www.tibco.com/xmlns/ae2xsd/2002/05/ae/baseDocument       file:/e:/Migration_Test1/migrate/Schemas/ae/baseDocument.xsd
+2023-04-17 17:27:34,434 [Worker-11] DEBUG com.tibco.bw.migration.debug  - Added Schema to ResourceSet => http://www.tibco.com/xmlns/ae2xsd/2002/05/ae/baseDocument   with location   e:/Migration_Test1/migrate/Schemas/ae/baseDocument.xsd
+2023-04-17 17:27:34,434 [Worker-11] DEBUG com.tibco.bw.migration.debug  - http://www.tibco.com/xmlns/ae2xsd/2002/05       file:/e:/Migration_Test1/migrate/Schemas/ae2xsd.xsd
+2023-04-17 17:27:34,434 [Worker-11] DEBUG com.tibco.bw.migration.debug  - Added Schema to ResourceSet => http://www.tibco.com/xmlns/ae2xsd/2002/05   with location   e:/Migration_Test1/migrate/Schemas/ae2xsd.xsd
+2023-04-17 17:27:34,435 [Worker-11] DEBUG com.tibco.bw.migration.debug  - http://www.tibco.com/xmlns/ae2xsd/2002/05       file:/e:/Migration_Test1/migrate/Schemas/ae2xsd.xsd
+2023-04-17 17:27:34,435 [Worker-11] DEBUG com.tibco.bw.migration.debug  - Added Schema to ResourceSet => http://www.tibco.com/xmlns/ae2xsd/2002/05   with location   e:/Migration_Test1/migrate/Schemas/ae2xsd.xsd
+2023-04-17 17:27:34,436 [Worker-11] INFO  com.tibco.bw.migration.debug  - Migrating Processes..
+2023-04-17 17:27:34,444 [Worker-11] INFO  com.tibco.bw.migration.debug  - Process Migration Order is => 
+2023-04-17 17:27:34,444 [Worker-11] INFO  com.tibco.bw.migration.debug  - migrate/Process Definition.process
+2023-04-17 17:27:34,573 [Worker-11] INFO  com.tibco.bw.migration.debug  - Migrating process - migrate/Process Definition.process
+2023-04-17 17:27:34,583 [Worker-11] INFO  com.tibco.bw.migration.debug  - The process "migrate.Process-Definition" migration started
+2023-04-17 17:27:34,733 [Worker-11] DEBUG com.tibco.bw.migration.debug  - Timer EventSource "Timer" migration tasks :
+2023-04-17 17:27:34,735 [Worker-11] DEBUG com.tibco.bw.migration.debug  - Creating Timer EventSource
+2023-04-17 17:27:34,736 [Worker-11] DEBUG com.tibco.bw.migration.debug  - Migrating Timer EventSource StartTime: Fri Apr 14 18:29:53 IST 2023
+2023-04-17 17:27:34,741 [Worker-11] DEBUG com.tibco.bw.migration.debug  - Migrating Timer EventSource RunOnce: true
+2023-04-17 17:27:34,742 [Worker-11] DEBUG com.tibco.bw.migration.debug  - Migrating Timer EventSource TimeInterval: 1
+2023-04-17 17:27:34,742 [Worker-11] DEBUG com.tibco.bw.migration.debug  - Migrating Timer EventSource IntervalUnit: Second
+2023-04-17 17:27:35,098 [Worker-11] DEBUG com.tibco.bw.migration.debug  - An Event Source's getInputType() method should never be called
+java.lang.IllegalStateException: An Event Source's getInputType() method should never be called
+	at com.tibco.bw.design.api.BWEventSourceSignature.getInputType(BWEventSourceSignature.java:44)
+	at com.tibco.bw.tools.migrator.v6.impl.Bw6ActivityTypeSignature.getActivityInputElementDecl(Bw6ActivityTypeSignature.java:101)
+	at com.tibco.bw.tools.migrator.v6.modelbuilders.process.impl.Bw6ProcessBuilder.migrateActivitySignatureAndMapping(Bw6ProcessBuilder.java:4168)
+	at com.tibco.bw.tools.migrator.v6.modelbuilders.process.impl.Bw6ProcessBuilder.buildActivity(Bw6ProcessBuilder.java:1153)
+	at com.tibco.bw.tools.migrator.v6.modelbuilders.process.impl.Bw6ProcessBuilder.buildFlow(Bw6ProcessBuilder.java:917)
+	at com.tibco.bw.tools.migrator.v6.modelbuilders.process.impl.Bw6ProcessBuilder.buildProcess(Bw6ProcessBuilder.java:460)
+	at com.tibco.bw.tools.migrator.v6.modelbuilders.process.impl.Bw6ProcessBuilder.build(Bw6ProcessBuilder.java:337)
+	at com.tibco.bw.tools.migrator.v6.composite.application.generator.impl.Bw6ProcessGenerator.buildProcess(Bw6ProcessGenerator.java:790)
+	at com.tibco.bw.tools.migrator.v6.composite.application.generator.impl.Bw6ProcessGenerator.buildProcess(Bw6ProcessGenerator.java:769)
+	at com.tibco.bw.tools.migrator.v6.composite.application.generator.impl.Bw6ProcessGenerator.generate(Bw6ProcessGenerator.java:329)
+	at com.tibco.bw.tools.migrator.v6.composite.application.generator.impl.Bw6ProcessGenerator.generateProcesses(Bw6ProcessGenerator.java:272)
+	at com.tibco.bw.tools.migrator.v6.composite.application.generator.impl.Bw6ProcessGenerator.generateProcesses(Bw6ProcessGenerator.java:131)
+	at com.tibco.bw.tools.migrator.v6.composite.application.generator.impl.Bw6ProcessGenerator.generate(Bw6ProcessGenerator.java:113)
+	at com.tibco.bw.tools.migrator.v6.composite.application.generator.impl.CompositeApplicationGenerator.generateProcesses(CompositeApplicationGenerator.java:1521)
+	at com.tibco.bw.tools.migrator.v6.composite.application.generator.impl.CompositeApplicationGenerator.writeCompositeAppProject(CompositeApplicationGenerator.java:585)
+	at com.tibco.bw.tools.migrator.v6.composite.application.generator.impl.CompositeApplicationGenerator.generateProject(CompositeApplicationGenerator.java:368)
+	at com.tibco.bw.tools.migrator.v6.composite.application.generator.impl.CompositeApplicationGenerator.generate(CompositeApplicationGenerator.java:221)
+	at com.tibco.bw.tools.migrator.v6.impl.Bw6MigratorV2.migrate(Bw6MigratorV2.java:159)
+	at com.tibco.bw.tools.migrator.v6.impl.Bw6MigratorV2.migrate(Bw6MigratorV2.java:100)
+	at com.tibco.bw.tools.migrator.v6.utils.ProjectMigrationJob$MigrationJob.migrateProject(ProjectMigrationJob.java:222)
+	at com.tibco.bw.tools.migrator.v6.utils.ProjectMigrationJob$MigrationJob.startMigration(ProjectMigrationJob.java:209)
+	at com.tibco.bw.tools.migrator.v6.utils.ProjectMigrationJob$MigrationJob.run(ProjectMigrationJob.java:178)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+2023-04-17 17:27:35,109 [Worker-11] DEBUG com.tibco.bw.migration.debug  - The activity "Timer" has been migrated.
+2023-04-17 17:27:35,132 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 	*** Updated Activity Report from HANDLER for Activity Timer
+2023-04-17 17:27:35,132 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 		*** Activity: Timer	HASHCODE: 2119873152
+2023-04-17 17:27:35,132 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 		 IsUpdated = true
+2023-04-17 17:27:35,132 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 	***DONE
+2023-04-17 17:27:35,139 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 
+File read activity "Read File" migration tasks :
+2023-04-17 17:27:35,139 [Worker-11] DEBUG com.tibco.bw.migration.debug  - Creating read file activity
+2023-04-17 17:27:35,141 [Worker-11] DEBUG com.tibco.bw.migration.debug  - migrating read file activity encoding property
+2023-04-17 17:27:35,768 [Worker-11] DEBUG com.tibco.bw.migration.debug  - The activity "Read File" has been migrated.
+2023-04-17 17:27:35,789 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 	*** Updated Activity Report from HANDLER for Activity Read-File
+2023-04-17 17:27:35,789 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 		*** Activity: Read-File	HASHCODE: 2003519740
+2023-04-17 17:27:35,789 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 		 IsUpdated = true
+2023-04-17 17:27:35,789 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 	***DONE
+2023-04-17 17:27:35,800 [Worker-11] DEBUG com.tibco.bw.migration.debug  - Creating parse data activity
+2023-04-17 17:27:36,594 [Worker-11] DEBUG com.tibco.bw.migration.debug  - The activity "Parse Data" has been migrated.
+2023-04-17 17:27:36,630 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 	*** Updated Activity Report from HANDLER for Activity Parse-Data
+2023-04-17 17:27:36,630 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 		*** Activity: Parse-Data	HASHCODE: 684926164
+2023-04-17 17:27:36,630 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 		 IsUpdated = true
+2023-04-17 17:27:36,630 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 	***DONE
+2023-04-17 17:27:36,634 [Worker-11] DEBUG com.tibco.bw.migration.debug  - Write to Log activity "Log" migration tasks :
+2023-04-17 17:27:36,635 [Worker-11] DEBUG com.tibco.bw.migration.debug  - Creating WriteToLog Activity
+2023-04-17 17:27:36,636 [Worker-11] DEBUG com.tibco.bw.migration.debug  - Migrating WriteToLog Role: User
+2023-04-17 17:27:36,636 [Worker-11] DEBUG com.tibco.bw.migration.debug  - Migrating WriteToLog SuppressJobInfo: false
+2023-04-17 17:27:36,927 [Worker-11] DEBUG com.tibco.bw.migration.debug  - The activity "Log" has been migrated.
+2023-04-17 17:27:36,932 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 	*** Updated Activity Report from HANDLER for Activity Log
+2023-04-17 17:27:36,932 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 		*** Activity: Log	HASHCODE: 655027242
+2023-04-17 17:27:36,932 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 		 IsUpdated = true
+2023-04-17 17:27:36,932 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 	***DONE
+2023-04-17 17:27:36,939 [Worker-11] DEBUG com.tibco.bw.migration.debug  - The activity "End" has been migrated.
+2023-04-17 17:27:36,939 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 	*** Updated Activity Report from HANDLER for Activity End
+2023-04-17 17:27:36,939 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 		*** Activity: End	HASHCODE: 1226629619
+2023-04-17 17:27:36,939 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 		 IsUpdated = true
+2023-04-17 17:27:36,939 [Worker-11] DEBUG com.tibco.bw.migration.debug  - 	***DONE
+2023-04-17 17:27:36,956 [Worker-11] DEBUG com.tibco.bw.migration.debug  - ############## ProcessReportImpl->addReport() not implemented for: class org.eclipse.bpel.model.impl.SourceImpl ####################
+2023-04-17 17:27:37,002 [Worker-11] DEBUG com.tibco.bw.migration.debug  - ############## ProcessReportImpl->addReport() not implemented for: class org.eclipse.bpel.model.impl.SourceImpl ####################
+2023-04-17 17:27:37,049 [Worker-11] DEBUG com.tibco.bw.migration.debug  - ############## ProcessReportImpl->addReport() not implemented for: class org.eclipse.bpel.model.impl.SourceImpl ####################
+2023-04-17 17:27:37,067 [Worker-11] DEBUG com.tibco.bw.migration.debug  - ############## ProcessReportImpl->addReport() not implemented for: class org.eclipse.bpel.model.impl.SourceImpl ####################
+2023-04-17 17:27:37,071 [Worker-11] INFO  com.tibco.bw.migration.debug  - The process "migrate.Process-Definition" migration done.

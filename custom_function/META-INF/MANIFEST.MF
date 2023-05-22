@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Custom_function
+Bundle-SymbolicName: custom_function;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Export-Package: custom_function
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Service-Component: OSGI-INF/cxf.xml
+Bundle-ActivationPolicy: lazy
+Import-Package: com.tibco.xml.cxf.common.annotations

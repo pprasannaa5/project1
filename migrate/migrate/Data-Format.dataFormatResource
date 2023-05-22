@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Data-Format.xsd="http://ns.tibco.com/bw/palette/dataformat/migrate/Data-Format.xsd" xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_EPmGsN0aEe2nGKSYP3akFg" name="migrate.Data-Format" type="dataformat:DataFormat">
+  <jndi:configuration xsi:type="dataformat:DataFormat" xmi:id="_EPmGsd0aEe2nGKSYP3akFg" formatType="Delimiter separated" colSeparator="," colSeparatorParseRule="Treat all characters as entered as a single column separator string" lineSeparator="New Line" schemaElement="Data-Format.xsd#//root;XSDElementDeclaration" schemaElementQName="Data-Format.xsd:root" fieldOffsetsStr="s.no(0,0)&#xA;name(0,0)&#xA;id(0,0)&#xA;Salary(0,0)">
+    <fieldOffsets xmi:id="_EPmGst0aEe2nGKSYP3akFg" name="s.no"/>
+    <fieldOffsets xmi:id="_EPmGs90aEe2nGKSYP3akFg" name="name"/>
+    <fieldOffsets xmi:id="_EPmGtN0aEe2nGKSYP3akFg" name="id"/>
+    <fieldOffsets xmi:id="_EPmGtd0aEe2nGKSYP3akFg" name="Salary"/>
+  </jndi:configuration>
+</jndi:namedResource>
